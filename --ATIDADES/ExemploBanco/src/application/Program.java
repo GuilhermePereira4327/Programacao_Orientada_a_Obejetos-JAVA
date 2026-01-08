@@ -12,7 +12,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		Account account;
 		
-		System.out.print("Enetraccount number: ");
+		System.out.print("Enter account number: ");
 		int number = sc.nextInt();
 		sc.nextLine();
 		System.out.print("Enter account hold: ");
@@ -20,6 +20,7 @@ public class Program {
 		System.out.print("Is there na initial");
 		System.out.print("Is there na initial deposit (y/n)? ");
 		char response = sc.next().charAt(0);
+		
 		if (response == 'y') {
 			System.out.print("Enter initial deposit value: ");
 			double initialDeposit = sc.nextDouble();

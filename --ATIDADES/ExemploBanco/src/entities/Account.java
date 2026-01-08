@@ -7,16 +7,14 @@ public class Account {
 	private double balance;
 	
 	public Account(int number, String name) {
-		super();
 		this.number = number;
 		this.holder = name;
 	}
 	
-	public Account(int number, String name, double balance) {
-		super();
+	public Account(int number, String name, double initialBalance) {
 		this.number = number;
 		this.holder = name;
-		this.balance = balance;
+		deposit(initialBalance);
 	}
 
 	public int getNumber() {
@@ -40,7 +38,7 @@ public class Account {
 	}
 	
 	public void sake(double sake) {
-		balance = (balance - sake) - 5.0;
+		balance -= sake + 5.0;
 	}
 	
 	public String toString() {
